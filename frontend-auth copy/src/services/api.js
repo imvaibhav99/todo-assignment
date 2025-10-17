@@ -1,4 +1,4 @@
-const BASE_URL = 'http://localhost:9000/api/v1';
+const BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:9000/api/v1';
 
 export const withCreds = {
   withCredentials: true,
